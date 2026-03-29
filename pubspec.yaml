@@ -1,0 +1,60 @@
+name: bomberman
+description: "신시(神市): 방치형 신화 RPG - 한국 신화를 기반으로 한 하이퍼캐주얼 방치형 RPG 게임"
+publish_to: 'none'
+
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.3
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Game Engine & Audio
+  flame: ^1.17.0
+  flame_audio: ^2.5.0
+
+  # Monetization
+  google_mobile_ads: ^4.0.0
+  in_app_purchase: ^3.1.10
+
+  # Storage & Preferences
+  shared_preferences: ^2.2.2
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  assets:
+    # 게임 이미지
+    - assets/images/
+
+    # 다국어 JSON
+    - assets/i18n/ko.json
+    - assets/i18n/en.json
